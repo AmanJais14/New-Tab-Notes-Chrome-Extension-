@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Tab Notes</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-image: linear-gradient(135deg, #f6d365 10%, #fda085 100%);
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    textarea {
+      width: 100%;
+      max-width: 800px;
+      height: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      border: none;
+      font-size: 18px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      color: #333;
+      resize: none;
+      outline: none;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff6363;
+      color: #ffffff;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #e05252;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <h1>My Notes</h1>
+  <textarea id="noteArea" placeholder="Write your notes here..."></textarea>
+  <button id="downloadBtn">Download Notes</button>
+  <script src="script.js"></script>
+  
+</body>
+</html>
